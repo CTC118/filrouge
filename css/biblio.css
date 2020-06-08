@@ -1,0 +1,160 @@
+/* Fichier CSS de l'application biblio */
+@charset "utf-8";
+* {
+    margin:0px;
+    padding:0px;
+}
+/* header {
+    margin-top: 5px;
+    margin-left:5%;
+    padding: 5px;
+    border-bottom: solid thin;
+} */
+
+/* #top {
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+    opacity: 0.75;
+    border: none;
+    z-index: 1;
+} */
+
+#logo {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    z-index: 2;
+}
+
+/* .container.custom-container-width {
+    max-width: 1010px;
+    margin-left: auto;
+    margin-right: auto;       
+} */
+
+/* .footer-bottom a{color:#bbb}
+.foot_menu{float:right}
+.foot_menu ul{margin:0}
+.foot_menu ul li{float:left;padding-left:15px;list-style:none}
+.foot_menu ul li:first-child{padding-left:0}
+.foot_menu ul li a:hover{text-decoration:underline}
+
+.copyright {
+    color:#333;
+    text-decoration:none
+} */
+
+/* .copyright{
+    margin-top: 900px;
+} */
+table {
+    width:90%;
+    border:none;
+    border-collapse:collapse;
+}
+#adresse,#commande,#ligneProduit {
+    margin-left:10%;
+}
+#adresse th {
+    text-align:left;
+}
+#commande th, #commande td, #ligneProduit th, #ligneProduit td {
+    border:solid thin;
+    padding:3px 10px;
+}
+.table th, .table td{
+    vertical-align: middle
+  }
+/* .prix::after {
+    content: " €";
+} */
+/* #amende::after{
+    content: " €";
+} */
+#intro {
+    
+    background-color: pink;
+    margin-top: 20px;
+}
+#intro p{
+    font-size: 1.25em;
+    font-family: sans-serif;
+}
+
+
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+#slideshow img {vertical-align: middle;}
+
+
+/* Slideshow container */
+#slideshow {
+  /* position: relative; */
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  /* position: absolute;
+  bottom: 8px; */
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+@media screen and (max-width: 576px){
+    .container{
+        margin-left:5%;
+    }
+}
