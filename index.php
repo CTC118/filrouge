@@ -4,6 +4,7 @@ use CTC\App\Controller\BookController;
 use CTC\App\Controller\UserController;
 use CTC\App\Controller\PanierController;
 use CTC\App\Controller\AdminController;
+use CTC\App\Controller\NavController;
 use CTC\App\Entities\{User, Panier};
 
 spl_autoload_register(function ($className){
@@ -61,6 +62,10 @@ switch ($entite) {
     case 'accueil':
         $vue = 'accueil';
         include 'App/Vue/template.php';
+        break;
+    case 'nav':
+        $ctrl = new NavController();
+        $ctrl->make($action);
         break;
     case 'book':
         $ctrl = new BookController();
