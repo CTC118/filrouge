@@ -1,8 +1,9 @@
 <main>
+<a id="uptoTop_book" href="#back_top" class="btn btn-secondary"><i class="fas fa-angle-up"></i></a>
 <?php if(!empty($categ)): ?>
-  <h1 style="text-align: center; margin-top:15px;">Liste de la catégorie <?=$categ?> </h1>
+  <h2 style="text-align: center; margin-top:15px;">Liste de la catégorie <?=$categ?> </h2><hr>
 <?php elseif(!empty($results)): ?>
-  <h1 style="text-align: center;margin-top:15px;">Résutat de recherche</h1>
+  <h2 style="text-align: center;margin-top:15px;">Résutat de recherche</h2><hr>
 <?php endif; ?>
 <div id="msg" style="float:right">Livre ajouté au panier</div>
 <div style="padding:30px; margin:0px 20px;">

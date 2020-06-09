@@ -1,18 +1,16 @@
-<main class="container">
+<main style="padding:30px;">
 <div id="print_area">
-    <br>
-    <h2 style="text-align: center;">Liste de livres</h2>
+    <h2 style="text-align:center;">Liste de livres</h2><hr>
     <button onclick="print();" type="button" class="btn btn-info float-right">IMPRIMER&nbsp;&nbsp;&nbsp;<i class="fas fa-print"></i></button>
     <br><br>
     <br>
-    <table class="table table-hover table-bordered">
+    <table class="table table-hover table-bordered" style="text-align: center;vertical-align: middle;">
         <thead>
             <tr class="table-primary">
-                <th scope="col" style="width:50px;text-align: center;">IdBook</th>
-                <th scope="col" style="width:400px;text-align: center;">TITRE</th>
-                <th scope="col" style="width:170px;text-align: center;">ISBN</th>
+                <th scope="col" style="width:50px;">IdBook</th>
+                <th scope="col" style="width:400px;">TITRE</th>
+                <th scope="col" style="width:170px;">ISBN</th>
                 <th scope="col" style="width:80px;"><a href="index.php?entite=panier&action=vider" style="text-decoration: none;">Vider panier</a></th>
-                <!-- <th scope="col">QUANTITE TOTAL</th> -->
             </tr>
         </thead>
         <tbody>
@@ -22,16 +20,10 @@
                 <td style="padding-left:20px;"><?= $article->getLivre()->getTitre()?></td>
                 <td style="padding-left:20px;"><?= $article->getLivre()->getIsbn()?></td>
                 <td style="text-align: center;"><a type="button"  onclick="requete(this)" data-id="<?=$idBook?>" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a></td>
-                <!--  <button onclick="requete(this)" data-id="<?=$idBook?>" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>-->
             </tr>
             <?php endforeach; ?>
         </tbody>
-        <!-- <tfoot>
-            <tr class="table-secondary">
-                <td colspan="3" style="text-align: right">QUANTITE TOTAL</td>
-                <td><?=$montant?></td>
-            </tr>
-        </tfoot> -->
+        
         </table> 
     <br>
     

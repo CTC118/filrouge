@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="padding-left:40px">
   <?php if ($vue !== 'accueil'): ?>
-    <a class="navbar-brand" href="index.php" ><i class="fas fa-home"></i></a>
+    <a class="navbar-brand" href="index.php" style="position:relative;top:-2px;"><i class="fas fa-home"></i>&nbsp;ACCUEIL</a>
   <?php endif; ?>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"  aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -20,26 +20,30 @@
             <a class="dropdown-item" href="index.php?entite=book&action=list_books&categ=Sciences et Techniques">Sciences & Techniques</a>
         </div>
       </li>
-       
+      <?php if ($vue !== 'infos'): ?>
       <li class="nav-item">
-        <a class="nav-link" href="#">INFOS PRATIQUES</a>
-      </li>
+        <a class="nav-link" href="index.php?entite=nav&action=info">INFOS PRATIQUES</a>
+      </li><?php endif; ?>
       <li class="nav-item">
         <a class="nav-link" href="#">AGENDA</a>
       </li>
-      <?php if ($connect && $status == 'admin'): ?>
-      <li class="nav-item" >
-        <a class="nav-link" href="index.php?entite=admin&action=admin_home">ADMINISTRATEUR</a>
-      </li>
-      <?php elseif ($connect && $status !== 'admin'): ?>
-      <li class="nav-item">
-      <a class="nav-link" href="index.php?entite=user&action=compte">MON COMPTE</a>
-      </li>
-      <?php endif ?>
+          <div id="nav_btn_role">
+              <?php if ($connect && $status == 'admin'): ?>
+              <li class="nav-item" >
+                <a class="nav-link" href="index.php?entite=admin&action=admin_home">ADMINISTRATEUR</a>
+              </li>
+              <?php elseif ($connect && $status !== 'admin'): ?>
+              <li class="nav-item">
+              <a class="nav-link" href="index.php?entite=user&action=compte">MON COMPTE</a>
+              </li>
+              <?php endif ?>
+          </div>
+
     </ul>
-    <form method="post" action="index.php?entite=book&action=search" class="form-inline my-2 my-lg-0">
-      <input name="search" class="form-control mr-sm-2" type="text" placeholder="Tapez un titre de livre...">
+    <form id="search_index1" method="post" action="index.php?entite=book&action=search" class="form-inline my-2 my-lg-0">
+      <input name="search" class="form-control mr-sm-2" type="text" placeholder="Tapez un titre de livre..." >
       <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
     </form>
+    
   </div>
 </nav>

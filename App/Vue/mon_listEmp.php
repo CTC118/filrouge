@@ -1,11 +1,11 @@
-<main style="padding:20px; ">
-<div class="form-group col-md-10" style="margin:auto;">
-    <div class="form-row" style="padding:20px 50px;">
-    <h2 style="margin:auto;">Liste d'inprunt</h2>
+<main >
+<h2 style="text-align: center; margin-top:15px;">Liste d'inprunt</h2><hr>
     
+<div style="padding:30px; margin:0px 20px;">
+  <div class="table-responsive" >
     <table class="table table-hover" style="margin-top:15px;text-align:center;">
             <thead>
-                <tr class="table-active">
+                <tr class="table-primary">
                     <th>#</th>
                     <th scope="col">Titre d'ouvrage</th>
                     <th scope="col">ISBN</th>
@@ -28,6 +28,7 @@
             </tbody>
     </table>
     </div>
+    </div>
     <!-- <div class="form-row" style="padding:10px 50px;margin-top:80px;">
     <h4 style="margin:auto;">Liste de réservation</h4>
     <table class="table table-hover" style="margin-top:15px;">
@@ -45,7 +46,7 @@
                 </tr>
             </tbody>
     </table> --><br><br><br>
-    </div>
+    
     <!-- <script>
         $(document).ready(function() {
            $("#num").html(function() {

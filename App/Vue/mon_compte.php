@@ -1,9 +1,9 @@
 <main style="padding:30px;">
-<h1 style="text-align:center;">Mon compte</h1>
+<h2 style="text-align:center;">Mon compte</h2>
 <a type="button" class="btn btn-info" href="index.php?entite=user&action=list_emp&ncard=<?=$user['ncard'];?>" style="float:right">Liste d'inprunt</a>
 <br><hr>
-<div class="form-group col-md-8" style="padding: 20px; margin:auto;">
-    <form method="post" action="index.php?entite=user&action=edit_mel_fon">
+<div class="form-group col-md-8" style="padding: 20px; margin:auto;background-color: rgba(255, 192, 203, 0.7); border-radius: 5px;" >
+    <form method="post" action="index.php?entite=user&action=edit_mel_fon" >
    
         <div class="form-row">
             <div class="form-group col-md-4">
