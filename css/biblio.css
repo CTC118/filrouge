@@ -4,22 +4,8 @@
     margin:0px;
     padding:0px;
 }
-/* header {
-    margin-top: 5px;
-    margin-left:5%;
-    padding: 5px;
-    border-bottom: solid thin;
-} */
-
-/* #top {
-
-    position: relative;
-    top: 0px;
-    left: 0px;
-    opacity: 0.75;
-    border: none;
-    z-index: 1;
-} */
+#uptoTop{display:none;}
+#uptoTop_book{position:fixed; bottom:30px; right:30px;z-index: 100;}
 
 #logo {
     position: absolute;
@@ -28,27 +14,23 @@
     z-index: 2;
 }
 
-/* .container.custom-container-width {
-    max-width: 1010px;
-    margin-left: auto;
-    margin-right: auto;       
-} */
+/* page accueil.php */
+#search_index2{display:none;}
+#intro {
+  padding:20px;
+  background-color: #EB6864;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+#intro h3{text-align: center;}
+#intro p{font-size: 1.05em;font-family: sans-serif;}
 
-/* .footer-bottom a{color:#bbb}
-.foot_menu{float:right}
-.foot_menu ul{margin:0}
-.foot_menu ul li{float:left;padding-left:15px;list-style:none}
-.foot_menu ul li:first-child{padding-left:0}
-.foot_menu ul li a:hover{text-decoration:underline}
 
-.copyright {
-    color:#333;
-    text-decoration:none
-} */
 
-/* .copyright{
-    margin-top: 900px;
-} */
+
+
+
+
 table {
     width:90%;
     border:none;
@@ -67,50 +49,30 @@ table {
 .table th, .table td{
     vertical-align: middle
   }
-/* .prix::after {
-    content: " €";
-} */
-/* #amende::after{
-    content: " €";
-} */
-#intro {
-    
-    background-color: pink;
-    margin-top: 20px;
-}
-#intro p{
-    font-size: 1.25em;
-    font-family: sans-serif;
-}
 
+
+
+/* Slideshow css */
 
 * {box-sizing: border-box;}
 .mySlides {display: none;}
-#slideshow img {vertical-align: middle;}
-
+#photoshow img {vertical-align: middle;border-radius: 5px;}
 
 /* Slideshow container */
-#slideshow {
-  /* position: relative; */
-  margin-left: 30px;
-  margin-top: 20px;
+#photoshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  vertical-align: middle;
+  /* margin-left: 30px; */
+  margin-top: 22px;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  /* position: absolute;
-  bottom: 8px; */
-  width: 100%;
-  text-align: center;
-}
 
-/* Number text (1/3 etc) */
+/* Number text (1/4 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
+  color: #aaa;
+  font-size: 20px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
@@ -149,12 +111,63 @@ table {
   to {opacity: 1}
 }
 
+/* page connect.php */
+#form_connect{
+  width:40%;margin:0px auto;padding:10px;
+}
+#form_div{
+  margin:10px auto;width:95%;
+}
+#open, #close{
+  position:relative;
+  top:-35px; left:445px;
+}
 
 
+#header_btn1_big{display: none;}
+#header_btn_role{display: none;}
+#header_btn_role2{display: none;}
 
 
 @media screen and (max-width: 576px){
-    .container{
-        margin-left:5%;
+    #search_index1{display: none;}
+    #search_index2{
+      position: relative;
+      top:-10px;
+      left: 25px;
+      display:inline;
+    }#search_index2_input{width:380px;}
+    #search_index2_btn{
+      position: relative;
+      top:-38px;
+      left: 390px;}
+
+    /* page connect.php */
+    #form_connect{
+      width:95%;
     }
+    #form_div{
+      margin:10px auto;width:95%;
+    }
+    #open, #close{
+      position:relative;
+      top:-35px; left:350px;
+    }
+
+    #index_date{display: none;}
+    #header_salut{margin-left: 20px;position: relative;top:-3px;}
+    #header_btn_tex{display: none; }
+    #header_btn_div{margin-left: 60px;}
+    #header_btn1{position: relative; z-index: 5;left: 88px;}
+    #header_btn1_big{display:inline;}
+    #header_btn1_small{display: none;}
+    #header_btn2{position: relative;top:6px;}
+    #header_btn3{position: relative;top:6px;left:75px;}
+    #nav_btn_role{display: none;}
+    #header_btn_role{display:block;height:40px;width:95px; position: absolute;top:183px;left:220px;}
+    #header_btn_role_pic{width:30px; position: relative; top:-2px; left:-3px;}
+    #header_btn_role2{display:block;height:40px;width:130px; position: absolute;top:183px;left:210px;}
+
+    #uptoTop{display:block;position:fixed;bottom:25px;right:15px;z-index: 100;}
+    #uptoTop_book{display: none;}
 }
