@@ -323,7 +323,6 @@ class AdminController{
                 break;
 
             case 'admin_compte':
-                $prenom = filter_input(INPUT_GET, 'prenom');
                 $email = filter_input(INPUT_GET, 'email');
                 $phone = filter_input(INPUT_GET, 'phone');
                 $cp = filter_input(INPUT_GET, 'cp');

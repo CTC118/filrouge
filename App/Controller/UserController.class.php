@@ -46,7 +46,6 @@ class UserController {
             case 'compte':
                 global $connect;
                 global $nom, $prenom, $status, $idUser;
-                $prenom = filter_input(INPUT_GET, 'prenom');
                 $email = filter_input(INPUT_GET, 'email', FILTER_VALIDATE_EMAIL);
                 $phone = filter_input(INPUT_GET, 'phone');
                 $cp = filter_input(INPUT_GET, 'cp');
